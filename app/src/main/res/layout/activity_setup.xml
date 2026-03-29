@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SetupActivity">
+
+    <TextView
+        android:id="@+id/setup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET UP YOUR WORKOUT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/label_rounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL ROUNDS:"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/setup_title"
+        app:layout_constraintStart_toStartOf="parent" />
+    <NumberPicker
+        android:id="@+id/picker_total_rounds"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_rounds"
+        app:layout_constraintTop_toTopOf="@id/label_rounds"
+        app:layout_constraintBottom_toBottomOf="@id/label_rounds"
+        android:theme="@style/ThemeOverlay.AppCompat.Dialog.Alert"/>
+
+    <TextView
+        android:id="@+id/label_intensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAX INTENSITY (1-3):"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/picker_total_rounds"
+        app:layout_constraintStart_toStartOf="parent" />
+    <NumberPicker
+        android:id="@+id/picker_max_intensity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_intensity"
+        app:layout_constraintTop_toTopOf="@id/label_intensity"
+        app:layout_constraintBottom_toBottomOf="@id/label_intensity"
+        android:theme="@style/ThemeOverlay.AppCompat.Dialog.Alert"/>
+
+    <TextView
+        android:id="@+id/label_round_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ROUND DURATION (s):"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/picker_max_intensity"
+        app:layout_constraintStart_toStartOf="parent" />
+    <NumberPicker
+        android:id="@+id/picker_round_duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_round_duration"
+        app:layout_constraintTop_toTopOf="@id/label_round_duration"
+        app:layout_constraintBottom_toBottomOf="@id/label_round_duration"
+        android:theme="@style/ThemeOverlay.AppCompat.Dialog.Alert"/>
+
+    <TextView
+        android:id="@+id/label_rest_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REST DURATION (s):"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/picker_round_duration"
+        app:layout_constraintStart_toStartOf="parent" />
+    <NumberPicker
+        android:id="@+id/picker_rest_duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_rest_duration"
+        app:layout_constraintTop_toTopOf="@id/label_rest_duration"
+        app:layout_constraintBottom_toBottomOf="@id/label_rest_duration"
+        android:theme="@style/ThemeOverlay.AppCompat.Dialog.Alert"/>
+
+    <TextView
+        android:id="@+id/label_type_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMBO TYPE FILTER:"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/picker_rest_duration"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Spinner
+        android:id="@+id/spinner_type_filter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/label_type_filter"
+        app:layout_constraintTop_toTopOf="@id/label_type_filter"
+        app:layout_constraintBottom_toBottomOf="@id/label_type_filter"
+        android:entries="@array/combo_type_options"
+        style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+    <Button
+        android:id="@+id/btn_confirm_setup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BEGIN TRAINING"
+        android:textSize="20sp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

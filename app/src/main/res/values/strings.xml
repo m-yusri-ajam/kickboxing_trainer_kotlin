@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Kickboxing Trainer</string>
+    <string name="title_activity_data_input">DataInputActivity</string>
+    <string name="title_activity_session_history">SessionHistoryActivity</string>
+    <string name="title_activity_summary">SummaryActivity</string>
+    <string name="title_activity_training">Training Session</string>
+    <string name="title_activity_setup">Setup Workout</string>
+    <string name="title_activity_combo_manager">Combo Manager</string>
+    <string name="title_activity_data_manager">Session Log</string>
+    <string name="intensity_picker_description">Max Combo Intensity selector</string>
+    <string-array name="combo_type_options">
+        <item>ANY</item>
+        <item>Hand Only</item>
+        <item>Kick Only</item>
+        <item>Hand &amp; Kick</item>
+        <item>Kick &amp; Defense</item>
+        <item>Hand &amp; Defense</item>
+    </string-array>
+</resources>

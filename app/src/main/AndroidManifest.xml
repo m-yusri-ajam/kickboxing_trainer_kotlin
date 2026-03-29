@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KickboxingTrainer">
+        <activity
+            android:name=".SummaryActivity"
+            android:exported="false"
+            android:label="@string/title_activity_summary"
+            android:theme="@style/Theme.KickboxingTrainer" />
+        <activity
+            android:name=".SessionHistoryActivity"
+            android:exported="false"
+            android:label="@string/title_activity_session_history"
+            android:theme="@style/Theme.KickboxingTrainer" />
+        <activity
+            android:name=".DataInputActivity"
+            android:exported="false"
+            android:label="@string/title_activity_data_input"
+            android:theme="@style/Theme.KickboxingTrainer" />
+        <activity
+            android:name=".TrainingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_training"
+            android:theme="@style/Theme.KickboxingTrainer" />
+        <activity
+            android:name=".SetupActivity"
+            android:exported="false"
+            android:label="@string/title_activity_setup"
+            android:theme="@style/Theme.KickboxingTrainer" />
+        <activity
+            android:name=".ComboManagerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_combo_manager"
+            android:theme="@style/Theme.KickboxingTrainer" />
+        <activity
+            android:name=".DataManagerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_data_manager"
+            android:theme="@style/Theme.KickboxingTrainer" />
+
+        <activity
+            android:name=".GlossaryActivity"
+            android:exported="false"
+            android:label="Technique Glossary"
+            android:theme="@style/Theme.KickboxingTrainer" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.KickboxingTrainer">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SessionLogActivity"
+            android:exported="false"
+            android:label="Workout History" />
+    </application>
+
+</manifest>
