@@ -1,0 +1,13 @@
+# Android Studio
+.idea/
+*.iml
+.gradle/
+local.properties
+
+# Build Folders
+build/
+app/build/
+
+# System Files
+.DS_Store
+Captures/
