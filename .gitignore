@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Android Studio
 .idea/
 *.iml
@@ -12,20 +11,3 @@ app/build/
 # System Files
 .DS_Store
 Captures/
-=======
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
->>>>>>> 686333f (Merged remote with local project)
